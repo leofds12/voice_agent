@@ -1,0 +1,36 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #f4f7f9;
+    margin: 0;
+    padding: 1rem;
+    color: #333;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+button:active {
+    background: #0056b3;
+}
+#status {
+    margin-left: 1rem;
+    font-style: italic;
+}
+#result {
+    margin-top: 2rem;
+}
+details {
+    margin-top: 1rem;
+    background: #e9ecef;
+    padding: 0.5rem;
+    border-radius: 6px;
+}

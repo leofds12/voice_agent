@@ -1,0 +1,18 @@
+[project]
+name = "sql-agent-ds"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic",
+    "fastapi>=0.135.3",
+    "mcp>=1.27.0",
+    "openai-whisper>=20250625",
+    "pandas>=3.0.2",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.27",
+    "torch>=2.11.0",
+    "uvicorn[standard]>=0.44.0",
+]

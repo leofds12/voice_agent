@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>SQL Agent Voice</title>
+  <link rel="stylesheet" href="/app/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SQL Agent</h1>
+    <p>Pregúntale a tus datos con voz</p>
+    <div class="controls">
+      <button id="recordBtn">🎤 Grabar</button>
+      <span id="status"></span>
+    </div>
+    <div id="result">
+      <p><strong>Transcripción:</strong> <span id="transcripcion"></span></p>
+      <p><strong>Respuesta:</strong> <span id="respuesta"></span></p>
+      <details id="details" hidden>
+        <summary>Detalles técnicos</summary>
+        <p><strong>SQL ejecutada:</strong> <code id="sql_code"></code></p>
+        <p><strong>Datos crudos:</strong> <pre id="raw_data"></pre></p>
+      </details>
+    </div>
+  </div>
+  <script src="/app/app.js"></script>
+</body>
+</html>
