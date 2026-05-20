@@ -10,13 +10,13 @@ TOOLS = [
         "type": "function",
         "function": {
             "name": "run_sql_query",
-            "description": "Ejecuta una consulta SQL contra la base de datos SQLite. Devuelve los resultados en formato JSON (lista de objetos). Solo usar para consultas de datos.",
+            "description": "Ejecuta una consulta SQL contra la base de datos SQLite. Devuelve los resultados en formato JSON. Solo se debe usar para consultas de datos de tipo SELECT. No se permiten operaciones de escritura, actualización ni borrado.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "sql": {
                         "type": "string",
-                        "description": "Consulta SQL a ejecutar (solo SELECT, no modificar datos)",
+                        "description": "Consulta SQL a ejecutar",
                     }
                 },
                 "required": ["sql"],
